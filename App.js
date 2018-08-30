@@ -4,7 +4,7 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React from 'react';
 import {
   Platform,
   StyleSheet,
@@ -12,6 +12,7 @@ import {
   Image,
   View
 } from 'react-native';
+import Judul from './Component/Judul'; 
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -21,10 +22,11 @@ const instructions = Platform.select({
 });
 
 type Props = {};
-export default class App extends Component<Props> {
+export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+        <Judul/>
         <Text style={styles.welcome}>Hai!</Text>
         <Text style={styles.instructions}>Nama : Adnin Andintian </Text>
         <Text style={styles.instructions}>Kelas : XI RPL 3 </Text>
